@@ -36,6 +36,8 @@ button:focus {
 }
 
 .app-header {
+  display: flex;
+  justify-content: space-between;
   flex-grow: 1;
   white-space: nowrap;
   overflow: hidden;
@@ -177,4 +179,16 @@ header {
 
 .login-form > div > button {
   background-color: #4eb9b4;
+}
+
+.user {
+  display: flex;
+  align-self: flex-end;
+  margin: 8px 16px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.user:hover {
+  color: rgb(7, 146, 128);
 }

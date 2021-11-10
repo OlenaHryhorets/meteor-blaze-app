@@ -1,5 +1,5 @@
 <body>
-    {{> mainContainer }}
+    {{> mainContainer}}
 </body>
 
 <template name="mainContainer">
@@ -8,9 +8,15 @@
             <div class="app-bar">
                 <div class="app-header">
                     <h1>📝️ To Do List {{incompleteCount}}</h1>
+                    {{#if isUserLogged}}
+                    <div class="user">
+                        {{getUser.username}} logout 🚪
+                    </div>
+                    {{/if}}
                 </div>
             </div>
         </header>
+
         <div class="main">
             {{#if isUserLogged}}
 
